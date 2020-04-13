@@ -1,0 +1,25 @@
+/*媒体查询*/
+/*屏幕大于768px*/
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .columnOne,
+    .columnTwo {
+        flex: 1;
+    }
+
+    .columnTwo {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    }
+    .wrapper{
+        overflow-y: scroll;
+    }
+}

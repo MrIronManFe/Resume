@@ -1,0 +1,85 @@
+/*动画*/
+
+/*头像动画*/
+
+.personalInfo img:hover{
+    animation: flashing 2s infinite;
+}
+
+@keyframes flashing {
+    from {
+         box-shadow: 0px 0px 0px 5px #a0ceff;
+    }
+
+    50% {
+         box-shadow: 0px 0px 10px 10px #a0ceff;
+    }
+
+    to {
+         box-shadow: 0px 0px 0px 5px #a0ceff;
+    }
+}
+
+/*工作经历icon动画*/
+
+.workExperence li:hover::before{
+    animation: iconFlashing 2s infinite;
+}
+
+@keyframes iconFlashing {
+    from {
+        box-shadow: 0px 0px 0px 5px #a0ceff;
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px 10px #a0ceff;
+    }
+
+    to {
+        box-shadow: 0px 0px 0px 5px #a0ceff;
+    }
+}
+
+/*进度条动画*/
+
+.thirty:hover{
+    animation: thirtyProgressing 1s;
+}
+
+@keyframes thirtyProgressing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+.fifty:hover{
+    animation: fiftyProgressing 1s;
+}
+
+@keyframes fiftyProgressing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+.seventy:hover  {
+    animation: seventyProgressing 1s;
+}
+
+@keyframes seventyProgressing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70%;
+    }
+}
